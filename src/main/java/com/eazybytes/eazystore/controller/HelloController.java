@@ -12,4 +12,10 @@ public class HelloController {
         System.out.println("Hello Java");
         return "Contact not found!";
     }
+
+    @GetMapping("/hello")
+    public String sayContact(){
+        System.out.println("Using Stash");
+        return "Stash usecase !";
+    }
 }
